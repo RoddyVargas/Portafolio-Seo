@@ -9,6 +9,8 @@ import InstagramIcon from '../components/icons/Instagram.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Briefcase from '../components/icons/Briefcase.astro';
+import CodeIcon from '../components/icons/CodeIcon.astro';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout title="Portafolio Roddy Leiva - Desarrollador y Programador Fullstack - 3 años de experiencia"
@@ -16,13 +18,13 @@ description="Contrata a Roddy Leiva para crear tu aplicación web o movil Desarr
 >
 	<main class="px-4">
 
-		<SectionContainer class="py-44 pb-24">
+		<SectionContainer class="py-44 pb-32">
 			<img class="rounded-full size-12 mb-4" src="https://media.licdn.com/dms/image/D4E03AQFczvtKsx3SBg/profile-displayphoto-shrink_800_800/0/1702487015677?e=1709164800&v=beta&t=lTkLn4dbPi88pwjQDaa2lQMfU7L4dAP2I5iGfTNFLhA" alt="Roddy Photo"></img>
 			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
 				Hi, I am Roddy Leiva<a href="https://www.linkedin.com/in/roddy-leiva/" target="_blank" rel="noopener" class="flex justify-center items-center"><Badge> Disponible para trabajar</Badge>
 				</a>
 			</h1>
-			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+			<h2 class="text-xl lg:text-3xl text-wrap max-w-[700px]">
 				<span>+3 años de experiencia.</span> <span class=" text-yellow-200/90">Desarrollador FullStack.</span> <span class="text-red-200/90"> De ciudad de Guatemala, Guatemala 🇬🇹.</span> <span class="opacity-75">Especializado en crear aplicaciones únicas.</span>		
 			</h2>
 
@@ -37,7 +39,7 @@ description="Contrata a Roddy Leiva para crear tu aplicación web o movil Desarr
 				</SocialPill>
 				<SocialPill href="https://roddydeveloper2023@gmail.com">
 					<MailIcon class="size-4 md:size-6"/>
-					roddydeveloper2023@gmail.com
+					mailto:roddydeveloper2023@gmail.com
 				</SocialPill>
 				<SocialPill href="https://www.instagram.com/unknown_rlv/?igsh=YTQwZjQ0NmI0OA%3D%3D">
 					<InstagramIcon class="size-4 md:size-6"/>
@@ -55,6 +57,13 @@ description="Contrata a Roddy Leiva para crear tu aplicación web o movil Desarr
 		<Experience />
 		</SectionContainer>
 
-				
+		<SectionContainer id="Proyectos">
+			<h2
+				class="text-3xl font-semibold mb-6 flex gap-x-3 items-center dark:text-white/80">
+				<CodeIcon class="size-7" />
+				Proyectos
+			</h2>
+			<Projects />
+			</SectionContainer>		
 	</main>
 </Layout>
