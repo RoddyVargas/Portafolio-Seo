@@ -11,6 +11,9 @@ import SectionContainer from '../components/SectionContainer.astro';
 import Briefcase from '../components/icons/Briefcase.astro';
 import CodeIcon from '../components/icons/CodeIcon.astro';
 import Projects from '../components/Projects.astro';
+import Education from '../components/Education.astro';
+import EducationItem from '../components/EducationItem.astro';
+import EducationIcon from '../components/icons/EducationIcon.astro';
 ---
 
 <Layout title="Portafolio Roddy Leiva - Desarrollador y Programador Fullstack - 3 años de experiencia"
@@ -55,6 +58,14 @@ description="Contrata a Roddy Leiva para crear tu aplicación web o movil Desarr
 			Experiencia laboral
 		</h2>
 		<Experience />
+		</SectionContainer>
+		<SectionContainer id="Educacion">
+			<h2
+			class="text-3xl font-semibold mb-6 flex gap-x-3 items-center dark:text-white/80">
+			<EducationIcon class="size-7"/>
+			Educación
+		</h2>
+		<Education />
 		</SectionContainer>
 
 		<SectionContainer id="Proyectos">
