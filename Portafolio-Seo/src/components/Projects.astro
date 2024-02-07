@@ -37,7 +37,23 @@ const PROJECTS = [
         github: 'https://github.com/RoddyVargas/StarWars-Ecomerce',
         image : '../projects/svgl.webp',
         tags : [TAGS.HTML, TAGS.CSS, TAGS.SCSS, TAGS.JavaScript]
-    }
+    },
+    {
+        title : 'Tetris-clone',
+        description:'Una pequeña version del lejendario tetris, me he enfocado en practicar la jugabilidad y mejorar la experiencia visual del usuario y del desarrollador con un codigo mas limpio y optimo. Para el diseño he utilizado Tecnologias como HTML, CSS y JavaScript',
+        link: 'https://roddyvargas.github.io/Tetris/',
+        github: 'https://github.com/RoddyVargas/Tetris',
+        image : '../projects/tetris-clone.webp',
+        tags : [TAGS.HTML, TAGS.CSS, TAGS.JavaScript]
+    },
+    {
+        title : 'Game Tower-blocks',
+        description:'Un juego muy especial me he basado en un juego de celular donde habia que hacer una torre de pasteles, como el juego de tetris solo es utilizable en pc he hecho este para que sea multidispositivo asi que puedes jugarlo desde tu celular.',
+        link: 'https://roddyvargas.github.io/TowerBlocks/',
+        github: 'https://github.com/RoddyVargas/TowerBlocks',
+        image : '../projects/tower-blocks.webp',
+        tags : [TAGS.HTML, TAGS.CSS, TAGS.JavaScript]
+    },
 ]
 ---
 <div class="flex flex-col gap-y-16">
@@ -46,7 +62,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt="StarWars" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
