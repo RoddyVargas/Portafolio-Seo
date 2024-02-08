@@ -9,5 +9,7 @@ export default defineConfig({
   site: 'https://roddyvargas.github.io/Portafolio-Seo/',
   base: '/Portafolio-seo/',
   integrations: [tailwind()],
-  adapter: netlify()
+  adapter: netlify({
+    edgeMiddleware:true
+  }),
 });
