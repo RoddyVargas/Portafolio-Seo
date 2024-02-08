@@ -3,7 +3,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  output: 'hybrid',
   site: 'https://roddyvargas.github.io/Portafolio-Seo/',
   base: '/Portafolio-seo/',
   integrations: [tailwind()]
