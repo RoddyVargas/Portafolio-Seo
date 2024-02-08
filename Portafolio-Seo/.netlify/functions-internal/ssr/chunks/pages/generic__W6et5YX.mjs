@@ -1,7 +1,7 @@
 import { isRemotePath } from '@astrojs/internal-helpers/path';
 import mime from 'mime/lite.js';
 import { A as AstroError, i as InvalidImageService, j as ExpectedImageOptions, E as ExpectedImage, c as createAstro, d as createComponent, k as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, f as addAttribute, s as spreadAttributes } from '../astro_vKCDQ1m9.mjs';
-import { i as isESMImportedImage, a as isLocalService, b as isRemoteImage, D as DEFAULT_HASH_PROPS, c as isRemoteAllowed } from '../astro/assets-service_yQqsJmha.mjs';
+import { i as isESMImportedImage, a as isLocalService, b as isRemoteImage, D as DEFAULT_HASH_PROPS, c as isRemoteAllowed } from '../astro/assets-service_DwyjgVqO.mjs';
 import 'html-escaper';
 import 'clsx';
 
@@ -9,7 +9,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      '../astro/assets-service_yQqsJmha.mjs'
+      '../astro/assets-service_DwyjgVqO.mjs'
     ).then(n => n.s).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -108,7 +108,7 @@ const etag = (payload, weak = false) => {
   return prefix + fnv1a52(payload).toString(36) + payload.length.toString(36) + '"';
 };
 
-const $$Astro$1 = createAstro("https://roddyvargas.github.io/Portafolio-Seo/");
+const $$Astro$1 = createAstro();
 const $$Image = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Image;
@@ -130,7 +130,7 @@ const $$Image = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<img${addAttribute(image.src, "src")}${spreadAttributes(additionalAttributes)}${spreadAttributes(image.attributes)}>`;
 }, "C:/Users/roddy/OneDrive/Documentos/GitHub/Portafolio-Seo/Portafolio-Seo/Portafolio-Seo/node_modules/astro/components/Image.astro", void 0);
 
-const $$Astro = createAstro("https://roddyvargas.github.io/Portafolio-Seo/");
+const $$Astro = createAstro();
 const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Picture;
